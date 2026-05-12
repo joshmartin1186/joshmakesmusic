@@ -24,18 +24,19 @@ const siteUrl = "https://joshmakesmusic.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Josh Martin — American Primitive Guitar",
+    default: "Josh Martin · Cosmic Mountain Guitar",
     template: "%s · Josh Martin",
   },
   description:
-    "Josh Martin is an American Primitive guitarist from Colorado Springs. His debut Western Mind (Eiderdown Records, 2025) draws on John Fahey, William Tyler, and Marisa Anderson.",
+    "Josh Martin is a cosmic mountain guitarist from Colorado Springs. Solo fingerstyle and effects-soaked electric playing in the American Primitive tradition. Debut album Western Mind on Eiderdown Records (2025).",
   keywords: [
     "Josh Martin",
+    "cosmic mountain guitar",
     "American Primitive guitar",
     "fingerstyle guitar",
     "Eiderdown Records",
     "Western Mind",
-    "cosmic pastoral",
+    "ambient guitar",
     "Colorado guitarist",
   ],
   authors: [{ name: "Josh Martin" }],
@@ -43,9 +44,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteUrl,
-    title: "Josh Martin — American Primitive Guitar",
+    title: "Josh Martin · Cosmic Mountain Guitar",
     description:
-      "Debut full-length Western Mind on Eiderdown Records (2025). Coverage: Acoustic Guitar Magazine, Bandcamp Daily, Aquarium Drunkard, KEXP.",
+      "Debut album Western Mind on Eiderdown Records (2025). Coverage: Acoustic Guitar Magazine, Bandcamp Daily, Aquarium Drunkard, KEXP.",
     siteName: "Josh Martin",
     images: [
       {
@@ -58,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Josh Martin — American Primitive Guitar",
+    title: "Josh Martin · Cosmic Mountain Guitar",
     description:
-      "Debut full-length Western Mind on Eiderdown Records (2025).",
+      "Debut album Western Mind on Eiderdown Records (2025).",
     images: ["/photos/og.jpg"],
   },
   robots: { index: true, follow: true },

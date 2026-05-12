@@ -34,7 +34,7 @@ function Hero() {
       <div className="absolute inset-0 -z-10">
         <Image
           src="/photos/hero.jpg"
-          alt={`${artist.name} — silhouette against aurora sky`}
+          alt={`${artist.name}, silhouette against aurora sky`}
           fill
           priority
           sizes="100vw"
@@ -124,7 +124,7 @@ function Listen() {
   return (
     <section id="listen" className="border-t border-border-subtle px-6 py-24 md:px-12 md:py-32">
       <div className="mx-auto max-w-6xl">
-        <SectionLabel>Listen — featured tracks</SectionLabel>
+        <SectionLabel>Listen · featured tracks</SectionLabel>
         <p className="mt-6 max-w-2xl font-display text-2xl leading-tight md:text-3xl">
           {album.title}, the debut on {album.label}.
         </p>

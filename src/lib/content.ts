@@ -4,11 +4,12 @@
 
 export const artist = {
   name: "Josh Martin",
-  tagline: "American Primitive Guitar · Colorado Springs",
+  tagline: "Cosmic Mountain Guitar · Colorado Springs",
   positioning:
-    "Cosmic pastoral · cinematic ambient · ambient country — fingerstyle and electric guitar from the base of the Front Range.",
+    "Solo fingerstyle and effects-soaked electric guitar from the base of the Front Range.",
   location: "Colorado Springs, Colorado",
   hometown: "Colorado Springs, CO",
+  genre: "Cosmic Mountain Guitar",
   influences: {
     primary: ["Marisa Anderson", "William Tyler"],
     secondary: ["Daniel Bachman", "Glenn Jones"],
@@ -17,18 +18,18 @@ export const artist = {
 } as const;
 
 export const bio = {
-  short: `Josh Martin is an American Primitive guitarist from Colorado Springs. His debut full-length, Western Mind, was released by Seattle's Eiderdown Records in November 2025 — a cassette-and-digital edition recorded alone in a shed at the base of the Front Range. The record drew early support from Acoustic Guitar Magazine, Bandcamp Daily, Aquarium Drunkard, and KEXP, and was described by The Third Eye as approaching "the spectral Americana of William Tyler."`,
+  short: `Josh Martin is a cosmic mountain guitarist from Colorado Springs. He plays solo fingerstyle and effects-soaked electric in the American Primitive tradition, pushed out toward ambient and cosmic country. His debut full-length, Western Mind, was released by Seattle's Eiderdown Records in November 2025, recorded alone in a shed at the base of the Front Range. The record drew early support from Acoustic Guitar Magazine, Bandcamp Daily, Aquarium Drunkard, and KEXP, and was described by The Third Eye as approaching "the spectral Americana of William Tyler."`,
 
   medium: [
-    `Josh Martin is an American Primitive guitarist from Colorado Springs, working at the intersection of ambient guitar, cosmic country, and psychedelic folk.`,
-    `His debut full-length, Western Mind, was released on Seattle's Eiderdown Records in November 2025 — a cassette edition of 100 with screen-printed artwork, recorded, mixed, and mastered alone in a shed at the base of the Front Range. Within weeks of release, the record drew coverage from Acoustic Guitar Magazine, Bandcamp Daily, Aquarium Drunkard, and The Third Eye, with radio support from KEXP (Pacific Notions and drive-time programming) and Jeff Conklin's The Trailhead.`,
-    `Critic Nick Pipitone described the record as approaching "the spectral Americana of William Tyler," writing that "a guitar can function as a landscape more than a lead instrument." Western Mind isn't trying to depict the American West so much as channel it — the imagined West, the internal West, the one that flashes in memory and myth.`,
+    `Josh Martin is a cosmic mountain guitarist from Colorado Springs. His music lives in the American Primitive tradition and drifts out toward ambient washes, cosmic country, and psychedelic folk.`,
+    `His debut full-length, Western Mind, was released on Seattle's Eiderdown Records in November 2025. The record is a cassette edition of 100 with screen-printed artwork, recorded, mixed, and mastered alone in a shed at the base of the Front Range. Within weeks of release, the album drew coverage from Acoustic Guitar Magazine, Bandcamp Daily, Aquarium Drunkard, and The Third Eye, with radio support from KEXP (Pacific Notions and drive-time programming) and Jeff Conklin's The Trailhead.`,
+    `Critic Nick Pipitone described the record as approaching "the spectral Americana of William Tyler," writing that "a guitar can function as a landscape more than a lead instrument." Western Mind isn't trying to depict the American West so much as channel it: the imagined West, the internal West, the one that flashes in memory and myth.`,
     `Goose Creek, a single Martin released a year before Western Mind, appeared on Aquarium Drunkard's Winter Solstice playlist and was curated by Prairiewolf into Mountain Meander: A Collection of Colorado Sounds. He is currently writing new material at the same shed-studio outside Colorado Springs.`,
   ],
 
   long: [
-    `Josh Martin is an American Primitive guitarist from Colorado Springs, Colorado. His music sits in a lineage that runs from John Fahey through William Tyler and Marisa Anderson — present and quiet, occasionally country-twanged, sometimes drifting toward open ambient passages, but always anchored to a sense of physical place.`,
-    `His debut full-length, Western Mind, was released by Seattle's Eiderdown Records in November 2025. The album was recorded, mixed, and mastered alone in a shed at the base of the Front Range, and arrived as a limited cassette edition of 100 with screen-printed artwork alongside a digital release. The collaborator on "Westcliffe," the record's lead track, is Stefan Beck of Eiderdown labelmates Golden Brown and of Prairiewolf — a long-running creative bridge across the Colorado scene.`,
+    `Josh Martin is a cosmic mountain guitarist from Colorado Springs, Colorado. His music is solo fingerstyle and effects-heavy electric playing, present and quiet, occasionally country-twanged, sometimes drifting toward open ambient passages, but always anchored to a sense of physical place.`,
+    `His debut full-length, Western Mind, was released by Seattle's Eiderdown Records in November 2025. The album was recorded, mixed, and mastered alone in a shed at the base of the Front Range, and arrived as a limited cassette edition of 100 with screen-printed artwork alongside a digital release. The collaborator on "Westcliffe," the record's lead track, is Stefan Beck of Eiderdown labelmates Golden Brown and of Prairiewolf, a long-running creative bridge across the Colorado scene.`,
     `Within weeks of release, Western Mind drew coverage from Acoustic Guitar Magazine, where Joey Lusterman wrote that "Josh Martin paints guitar-centered landscapes" with "a strong sense of place"; from Bandcamp Daily, which featured the record in its Best Country Music of November 2025; from The Third Eye, whose Nick Pipitone called the record "the imagined West, the internal West" and traced its closest comparison to William Tyler's "spectral Americana"; and from Aquarium Drunkard, which programmed Martin's "Goose Creek" into its curated catalog alongside Daniel Bachman, Ryley Walker, Cameron Knowler, and Sir Richard Bishop.`,
     `On radio, the record has been featured on KEXP's Pacific Notions (Alex Ruder) and on KEXP drive-time programming with DJ Riz. Jeff Conklin played "Tarryall" on The Trailhead 191 in a set bracketed by Sir Richard Bishop and Golden Brown.`,
     `Martin's work pre-dates Western Mind in the Colorado scene: his single "Goose Creek," released in August 2024, appeared on Aquarium Drunkard's Winter Solstice Spotify playlist and was selected by Prairiewolf for Mountain Meander: A Collection of Colorado Sounds. He is currently writing new material at the same shed-studio outside Colorado Springs.`,
@@ -113,7 +114,7 @@ export const radioAndCuration = [
 export const featuredTracks = [
   {
     title: "Westcliffe",
-    role: "Lead — features Stefan Beck (Golden Brown / Prairiewolf)",
+    role: "Lead. Features Stefan Beck (Golden Brown / Prairiewolf)",
     bandcampHref:
       "https://eiderdownrecords.bandcamp.com/album/western-mind",
     spotifyHref: null as string | null,
@@ -145,7 +146,7 @@ export const album = {
 } as const;
 
 export const liveVideo = {
-  // TBD — Joshua to provide live performance video URL
+  // TBD: Joshua to provide live performance video URL
   embedHref: null as string | null,
   title: "Live performance",
 };

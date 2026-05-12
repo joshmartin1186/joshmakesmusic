@@ -1,6 +1,6 @@
 # joshmakesmusic.com
 
-Electronic press kit for **Josh Martin** — American Primitive guitarist from Colorado Springs. Debut album *Western Mind* (Eiderdown Records, 2025).
+Electronic press kit for **Josh Martin**, cosmic mountain guitarist from Colorado Springs. Debut album *Western Mind* (Eiderdown Records, 2025).
 
 ## Stack
 
@@ -20,21 +20,21 @@ Open <http://localhost:3000>.
 
 ## Editing content
 
-Everything that changes regularly — bio text, press quotes, radio plays, featured tracks, contact info — lives in [`src/lib/content.ts`](src/lib/content.ts). Edit that file, save, push. Vercel redeploys automatically.
+Everything that changes regularly (bio text, press quotes, radio plays, featured tracks, contact info) lives in [`src/lib/content.ts`](src/lib/content.ts). Edit that file, save, push. Vercel redeploys automatically.
 
-The structure is intentional — one source of truth, typed, easy to skim:
+The structure is intentional. One source of truth, typed, easy to skim:
 
-- `artist` — name, tagline, location, influences
-- `bio` — short, medium, long (all three displayed at different points)
-- `pressQuotes` — quote / outlet / author / date / link
-- `radioAndCuration` — radio plays and curated placements
-- `featuredTracks` — three lead tracks with Bandcamp + Spotify links
-- `album` — *Western Mind* metadata
-- `contact` — booking, press, label, socials
+- `artist`: name, tagline, location, influences
+- `bio`: short, medium, long (all three displayed at different points)
+- `pressQuotes`: quote / outlet / author / date / link
+- `radioAndCuration`: radio plays and curated placements
+- `featuredTracks`: three lead tracks with Bandcamp + Spotify links
+- `album`: *Western Mind* metadata
+- `contact`: booking, press, label, socials
 
 ## Photos
 
-Drop real photos into [`public/photos/`](public/photos/) — see the README in that folder for required filenames and aspects. The current files are placeholders.
+Drop real photos into [`public/photos/`](public/photos/). See the README in that folder for required filenames and aspects. The current files are placeholders.
 
 ## Project layout
 
@@ -42,7 +42,7 @@ Drop real photos into [`public/photos/`](public/photos/) — see the README in t
 src/
   app/
     layout.tsx     # fonts, metadata, analytics
-    page.tsx       # the whole EPK — one scrolling page, ~7 sections
+    page.tsx       # the whole EPK, one scrolling page, ~7 sections
     globals.css    # theme tokens + Tailwind import
   lib/
     content.ts     # ← edit this to change anything

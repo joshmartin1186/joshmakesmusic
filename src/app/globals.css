@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* Dark default — matches the cosmic-pastoral visual identity */
+  /* Dark default. Matches the cosmic-pastoral visual identity */
   --background: #08070a;
   --foreground: #ece9e2;
   --foreground-muted: #8d8a85;
