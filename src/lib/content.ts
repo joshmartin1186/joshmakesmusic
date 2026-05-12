@@ -218,6 +218,14 @@ export const pressPhotos = [
     use: "Web banner / social header / festival lineup graphic",
     downloadName: "josh-martin-press-03-landscape.jpg",
   },
+  {
+    src: "/photos/press-04-playing.jpg",
+    alt: "Josh Martin seated on a rock outcropping playing acoustic guitar at dusk, mountains in the distance",
+    credit: "Photo: Poonam Martin · Sigma fp",
+    orientation: "landscape" as const,
+    use: "Editorial feature / artist-with-instrument shot",
+    downloadName: "josh-martin-press-04-playing.jpg",
+  },
 ] as const;
 
 // One-line credibility markers, used as a compressed strip on the landing
