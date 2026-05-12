@@ -1,22 +1,23 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
+  album,
   artist,
   bio,
-  pressQuotes,
-  radioAndCuration,
-  featuredTracks,
-  album,
   contact,
+  credibilityStrip,
+  featuredTracks,
+  landingQuotes,
 } from "@/lib/content";
 
 export default function Home() {
   return (
     <main className="flex-1">
       <Hero />
-      <PressQuotes />
+      <CredibilityStrip />
       <Listen />
-      <RadioCuration />
-      <Bio />
+      <Quotes />
+      <BioTeaser />
       <AlbumSection />
       <Contact />
       <Footer />
@@ -49,8 +50,8 @@ function Hero() {
         </span>
         <nav className="hidden gap-8 font-mono text-xs uppercase tracking-[0.18em] text-muted md:flex">
           <a href="#listen" className="hover:text-foreground">Listen</a>
-          <a href="#press" className="hover:text-foreground">Press</a>
           <a href="#bio" className="hover:text-foreground">Bio</a>
+          <Link href="/press" className="hover:text-aurora">Press Kit ↗</Link>
           <a href="#contact" className="hover:text-foreground">Contact</a>
         </nav>
       </header>
@@ -78,43 +79,31 @@ function Hero() {
           >
             Booking
           </a>
+          <Link
+            href="/press"
+            className="inline-flex items-center gap-2 rounded-full border border-border-stronger bg-foreground/5 px-5 py-2.5 font-mono text-xs uppercase tracking-[0.18em] backdrop-blur hover:bg-foreground/10"
+          >
+            Press Kit ↗
+          </Link>
         </div>
       </div>
     </section>
   );
 }
 
-function PressQuotes() {
+function CredibilityStrip() {
   return (
-    <section id="press" className="border-t border-border-subtle px-6 py-24 md:px-12 md:py-32">
+    <section className="border-t border-border-subtle px-6 py-10 md:px-12">
       <div className="mx-auto max-w-6xl">
-        <SectionLabel>Press</SectionLabel>
-        <ul className="mt-12 space-y-16">
-          {pressQuotes.map((q, i) => (
-            <li key={i} className="grid gap-6 md:grid-cols-[1fr_2fr] md:gap-12">
-              <div className="font-mono text-xs uppercase tracking-[0.18em] text-muted">
-                <div>{q.outlet}</div>
-                <div className="mt-2 text-faint">{q.author}</div>
-                <div className="mt-1 text-faint">{q.date}</div>
-                {q.href && (
-                  <a
-                    href={q.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-3 inline-block text-aurora hover:underline"
-                  >
-                    Read →
-                  </a>
-                )}
-              </div>
-              <blockquote className="font-display text-2xl leading-snug text-foreground md:text-3xl lg:text-4xl">
-                <span className="text-aurora">&ldquo;</span>
-                {q.quote}
-                <span className="text-aurora">&rdquo;</span>
-              </blockquote>
-            </li>
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-3 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-faint">
+          <span className="text-aurora">Heard on</span>
+          {credibilityStrip.map((name, i) => (
+            <span key={name} className="flex items-center gap-x-6">
+              <span className="text-foreground/80">{name}</span>
+              {i < credibilityStrip.length - 1 && <span className="text-faint">·</span>}
+            </span>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
@@ -184,44 +173,44 @@ function Listen() {
   );
 }
 
-function RadioCuration() {
+function Quotes() {
   return (
     <section className="border-t border-border-subtle px-6 py-24 md:px-12 md:py-32">
       <div className="mx-auto max-w-6xl">
-        <SectionLabel>Radio · Curation</SectionLabel>
-        <ul className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {radioAndCuration.map((r, i) => (
-            <li
-              key={i}
-              className="group rounded-lg border border-border-subtle p-6 transition hover:border-border-stronger"
-            >
-              <div className="font-mono text-xs uppercase tracking-[0.18em] text-aurora">
-                {r.outlet}
+        <SectionLabel>Press</SectionLabel>
+        <ul className="mt-12 space-y-12">
+          {landingQuotes.map((q, i) => (
+            <li key={i} className="grid gap-4 md:grid-cols-[1fr_2fr] md:gap-12">
+              <div className="font-mono text-xs uppercase tracking-[0.18em] text-muted">
+                <div>{q.outlet}</div>
+                <div className="mt-2 text-faint">{q.author}</div>
               </div>
-              <div className="mt-3 font-display text-xl leading-tight">{r.show}</div>
-              <div className="mt-4 flex items-center justify-between font-mono text-xs text-faint">
-                <span>{r.date}</span>
-                <span className="text-muted">{r.track}</span>
-              </div>
-              {r.href && (
-                <a
-                  href={r.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-block font-mono text-xs uppercase tracking-[0.18em] text-foreground/70 hover:text-aurora"
-                >
-                  →
-                </a>
-              )}
+              <blockquote className="font-display text-2xl leading-snug text-foreground md:text-3xl">
+                <span className="text-aurora">&ldquo;</span>
+                {q.quote}
+                <span className="text-aurora">&rdquo;</span>
+              </blockquote>
             </li>
           ))}
         </ul>
+        <div className="mt-12">
+          <Link
+            href="/press"
+            className="inline-flex items-center gap-2 rounded-full border border-aurora/40 bg-aurora/10 px-5 py-2.5 font-mono text-xs uppercase tracking-[0.18em] text-aurora hover:bg-aurora/20"
+          >
+            Full press kit ↗
+          </Link>
+        </div>
       </div>
     </section>
   );
 }
 
-function Bio() {
+function BioTeaser() {
+  // First two paragraphs of the medium bio — keep the landing scrollable.
+  // Full bios live on /press with copy buttons.
+  const teaser = bio.medium.slice(0, 2);
+
   return (
     <section id="bio" className="border-t border-border-subtle px-6 py-24 md:px-12 md:py-32">
       <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[1fr_2fr] md:gap-20">
@@ -239,21 +228,18 @@ function Bio() {
         </div>
         <div>
           <div className="space-y-6 text-lg leading-relaxed text-foreground/90">
-            {bio.medium.map((p, i) => (
+            {teaser.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
           </div>
-          <details className="mt-12 group">
-            <summary className="cursor-pointer list-none font-mono text-xs uppercase tracking-[0.18em] text-muted hover:text-aurora">
-              <span className="group-open:hidden">+ Read long bio</span>
-              <span className="hidden group-open:inline">− Collapse</span>
-            </summary>
-            <div className="mt-6 space-y-6 text-base leading-relaxed text-foreground/80">
-              {bio.long.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
-          </details>
+          <div className="mt-10">
+            <Link
+              href="/press#bios"
+              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-aurora hover:underline"
+            >
+              Full bio + press kit →
+            </Link>
+          </div>
 
           <div className="mt-12 grid gap-6 border-t border-border-subtle pt-8 font-mono text-xs uppercase tracking-[0.18em] text-muted md:grid-cols-3">
             <div>
@@ -374,6 +360,12 @@ function Contact() {
             >
               {contact.press}
             </a>
+            <Link
+              href="/press"
+              className="mt-2 inline-block font-mono text-xs uppercase tracking-[0.18em] text-aurora hover:underline"
+            >
+              Press kit ↗
+            </Link>
           </div>
           <div>
             <div className="font-mono text-xs uppercase tracking-[0.18em] text-faint">
@@ -434,7 +426,10 @@ function Footer() {
         <div>
           © {new Date().getFullYear()} {artist.name}
         </div>
-        <div>Built quietly in Colorado.</div>
+        <div className="flex gap-6">
+          <Link href="/press" className="hover:text-aurora">Press Kit</Link>
+          <span>Built quietly in Colorado.</span>
+        </div>
       </div>
     </footer>
   );

@@ -58,3 +58,20 @@ body {
   font-variation-settings: "opsz" 144, "SOFT" 30;
   letter-spacing: -0.04em;
 }
+
+/* One-sheet print rules: Letter portrait, generous margin, no backgrounds. */
+@media print {
+  @page {
+    size: Letter portrait;
+    margin: 0.5in;
+  }
+  html,
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  a {
+    color: #000000 !important;
+    text-decoration: none !important;
+  }
+}

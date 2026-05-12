@@ -36,6 +36,8 @@ export const bio = {
   ],
 } as const;
 
+// Full press quotes — used on /press. Editors get the unabridged versions
+// they can pull from. Order = roughly by outlet weight.
 export const pressQuotes = [
   {
     quote:
@@ -44,6 +46,15 @@ export const pressQuotes = [
     author: "Joey Lusterman",
     date: "Winter 2025–26",
     href: "https://acousticguitar.com/recent-and-remarkable-records-from-winter-2025-26/",
+    tier: 1,
+  },
+  {
+    quote:
+      "There's country music like they make in Nashville and then there's the big ol' wide open country music of Josh Martin, a Colorado-based guitarist whose music is like a wordless travelogue of the vast empty spaces that stretch across the American West. The song titles set the scene — 'Goose Creek,' 'Hwy 24,' 'Crags,' 'Truck Stop Hymnal' — and Martin uses six strings and some electronic sounds to conjure up backlit clouds, sun-dappled rivers, darkening skies, distant lightning, rolling pastures, and the steady thrum of a life lived among it all.",
+    outlet: "Bandcamp Daily",
+    author: "Ben Salmon",
+    date: "November 21, 2025",
+    href: "https://daily.bandcamp.com/",
     tier: 1,
   },
   {
@@ -63,6 +74,33 @@ export const pressQuotes = [
     date: "November 8, 2025",
     href: "https://thirdeyepsychrock.blog/2025/11/08/western-mind-by-josh-martin/",
     tier: 2,
+  },
+] as const;
+
+// Curated landing-page quotes — 3 max, compressed for atmosphere. The two
+// Third Eye quotes are combined into a single line because consecutive
+// quotes from the same outlet read as filler on a landing page.
+export const landingQuotes = [
+  {
+    quote:
+      "Josh Martin paints guitar-centered landscapes on Western Mind. A strong sense of place.",
+    outlet: "Acoustic Guitar Magazine",
+    author: "Joey Lusterman",
+    href: "https://acousticguitar.com/recent-and-remarkable-records-from-winter-2025-26/",
+  },
+  {
+    quote:
+      "The big ol' wide open country music of Josh Martin: a wordless travelogue of the vast empty spaces that stretch across the American West.",
+    outlet: "Bandcamp Daily",
+    author: "Ben Salmon",
+    href: "https://daily.bandcamp.com/",
+  },
+  {
+    quote:
+      "Comes closest to the spectral Americana of William Tyler. Western Mind isn't trying to depict the American West so much as channel it: the imagined West, the internal West, the one that flashes in memory and myth.",
+    outlet: "The Third Eye",
+    author: "Nick Pipitone",
+    href: "https://thirdeyepsychrock.blog/2025/11/08/western-mind-by-josh-martin/",
   },
 ] as const;
 
@@ -150,6 +188,48 @@ export const liveVideo = {
   embedHref: null as string | null,
   title: "Live performance",
 };
+
+// Press photo pack. Each is downloadable as-is from /public/photos.
+// `credit` is TBD until Joshua confirms photographers — placeholder shipped
+// with a TODO so the press page is still functional. Photographers should
+// be credited inline next to each download link.
+export const pressPhotos = [
+  {
+    src: "/photos/hero.jpg",
+    alt: "Josh Martin, full figure against aurora-lit sky on rock outcropping",
+    credit: "Photo: TBD",
+    orientation: "landscape" as const,
+    use: "Hero / cover / wide editorial",
+    downloadName: "josh-martin-press-01-hero.jpg",
+  },
+  {
+    src: "/photos/portrait.jpg",
+    alt: "Josh Martin, vertical portrait on rock at dusk",
+    credit: "Photo: TBD",
+    orientation: "portrait" as const,
+    use: "Magazine column / poster / social vertical",
+    downloadName: "josh-martin-press-02-portrait.jpg",
+  },
+  {
+    src: "/photos/landscape.jpg",
+    alt: "Josh Martin, landscape composition with mountains",
+    credit: "Photo: TBD",
+    orientation: "landscape" as const,
+    use: "Web banner / social header / festival lineup graphic",
+    downloadName: "josh-martin-press-03-landscape.jpg",
+  },
+] as const;
+
+// One-line credibility markers, used as a compressed strip on the landing
+// and as part of the one-sheet summary.
+export const credibilityStrip = [
+  "Acoustic Guitar Magazine",
+  "Bandcamp Daily",
+  "Aquarium Drunkard",
+  "KEXP",
+  "The Third Eye",
+  "The Trailhead",
+] as const;
 
 export const contact = {
   booking: "booking@joshmakesmusic.com",
