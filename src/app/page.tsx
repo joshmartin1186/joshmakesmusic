@@ -398,6 +398,14 @@ function Contact() {
             Bandcamp ↗
           </a>
           <a
+            href={contact.socials.spotify}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-border-stronger px-4 py-2 hover:bg-foreground/5"
+          >
+            Spotify ↗
+          </a>
+          <a
             href={contact.socials.instagram}
             target="_blank"
             rel="noreferrer"

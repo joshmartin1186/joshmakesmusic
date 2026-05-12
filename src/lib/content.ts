@@ -197,7 +197,7 @@ export const pressPhotos = [
   {
     src: "/photos/hero.jpg",
     alt: "Josh Martin, full figure against aurora-lit sky on rock outcropping",
-    credit: "Photo: TBD",
+    credit: "Photo: Poonam Martin · Sigma fp",
     orientation: "landscape" as const,
     use: "Hero / cover / wide editorial",
     downloadName: "josh-martin-press-01-hero.jpg",
@@ -205,7 +205,7 @@ export const pressPhotos = [
   {
     src: "/photos/portrait.jpg",
     alt: "Josh Martin, vertical portrait on rock at dusk",
-    credit: "Photo: TBD",
+    credit: "Photo: Poonam Martin · Sigma fp",
     orientation: "portrait" as const,
     use: "Magazine column / poster / social vertical",
     downloadName: "josh-martin-press-02-portrait.jpg",
@@ -213,7 +213,7 @@ export const pressPhotos = [
   {
     src: "/photos/landscape.jpg",
     alt: "Josh Martin, landscape composition with mountains",
-    credit: "Photo: TBD",
+    credit: "Photo: Poonam Martin · Sigma fp",
     orientation: "landscape" as const,
     use: "Web banner / social header / festival lineup graphic",
     downloadName: "josh-martin-press-03-landscape.jpg",
@@ -241,6 +241,7 @@ export const contact = {
   },
   socials: {
     bandcamp: "https://joshmakesstuff.bandcamp.com",
+    spotify: "https://open.spotify.com/artist/5GLM362jngsKxjBLeJgXay",
     instagram: "https://instagram.com/josh.makes.music",
     youtube: "https://youtube.com/@josh_j_martin",
   },

@@ -300,7 +300,7 @@ function ListenSection() {
             </div>
           </a>
           <a
-            href="https://open.spotify.com/artist"
+            href={contact.socials.spotify}
             target="_blank"
             rel="noreferrer"
             className="group block rounded-lg border border-border-subtle p-6 transition hover:border-aurora/40"
@@ -441,6 +441,14 @@ function ContactSection() {
             className="rounded-full border border-border-stronger px-4 py-2 hover:bg-foreground/5"
           >
             Bandcamp ↗
+          </a>
+          <a
+            href={contact.socials.spotify}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-border-stronger px-4 py-2 hover:bg-foreground/5"
+          >
+            Spotify ↗
           </a>
           <a
             href={contact.socials.instagram}
