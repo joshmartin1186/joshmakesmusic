@@ -77,7 +77,7 @@ export const pressQuotes = [
   },
   {
     quote:
-      "The mountains in the American West hold a different aura than those in the East. Listening to Josh Martin's stunningly beautiful Western Mind LP, you can immediately sense that aura. Martin, a Colorado-based guitarist, has crafted a musical homage to the \u201Cgrandeur and sublime beauty\u201D of his home state, offering odes to the \u201Chigh lonesome byways and wind-blown denizens\u201D of both the real and the imagined West.",
+      "Josh Martin's stunningly beautiful Western Mind LP… Martin, a Colorado-based guitarist, has crafted a musical homage to the \u201Cgrandeur and sublime beauty\u201D of his home state, offering odes to the \u201Chigh lonesome byways and wind-blown denizens\u201D of both the real and the imagined West. The music itself is poetic, beautiful. Martin's guitar is largely unadorned yet always powerful, carrying the quiet intensity of a mountain landscape at dusk. Highest possible recommendation.",
     outlet: "Revolt of the Apes",
     author: "@revoltoftheapes",
     date: "December 9, 2025",
