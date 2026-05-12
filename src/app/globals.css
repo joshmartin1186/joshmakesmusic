@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  /* Dark default — matches the cosmic-pastoral visual identity */
+  --background: #08070a;
+  --foreground: #ece9e2;
+  --foreground-muted: #8d8a85;
+  --foreground-faint: #4a4845;
+  --accent-aurora: #4ad9c8;        /* cyan from the aurora photos */
+  --accent-rose: #c97a8e;          /* warm rose pulled from the rocks */
+  --accent-deep: #1a1626;          /* deep purple horizon */
+  --border-subtle: rgba(236, 233, 226, 0.08);
+  --border-stronger: rgba(236, 233, 226, 0.16);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--foreground-muted);
+  --color-faint: var(--foreground-faint);
+  --color-aurora: var(--accent-aurora);
+  --color-rose: var(--accent-rose);
+  --color-deep: var(--accent-deep);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-stronger: var(--border-stronger);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-fraunces);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-feature-settings: "ss01", "ss02";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle aurora-tinted text selection */
+::selection {
+  background: var(--accent-aurora);
+  color: var(--background);
+}
+
+/* Display serif for big titles */
+.font-display {
+  font-family: var(--font-serif), Georgia, serif;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+  letter-spacing: -0.02em;
+}
+
+.font-display-tight {
+  font-family: var(--font-serif), Georgia, serif;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+  letter-spacing: -0.04em;
+}
