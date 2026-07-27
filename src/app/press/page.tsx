@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Press Kit",
   description:
-    "Press kit for Josh Martin — bios, press quotes, downloadable photos, streaming links, and contact for booking, press, and label.",
+    "Press kit for Josh Martin: bios, press quotes, downloadable photos, streaming links, and contact for booking, press, and label.",
   openGraph: {
     title: "Press Kit · Josh Martin",
     description:

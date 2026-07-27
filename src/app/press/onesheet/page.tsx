@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "One-Sheet",
   description:
-    "Single-page Josh Martin one-sheet — bio, top press, featured tracks, contact. Cmd/Ctrl-P to save as PDF.",
+    "Single-page Josh Martin one-sheet: bio, top press, featured tracks, contact. Cmd/Ctrl-P to save as PDF.",
   robots: { index: false, follow: false }, // not for search; reachable from /press only
 };
 
@@ -110,7 +110,7 @@ export default function OneSheetPage() {
                   &ldquo;{q.quote}&rdquo;
                 </p>
                 <p className="mt-1 font-mono text-[0.6rem] uppercase tracking-[0.18em] text-neutral-500">
-                  — {q.author}, {q.outlet} · {q.date}
+                  {q.author}, {q.outlet} · {q.date}
                 </p>
               </li>
             ))}
