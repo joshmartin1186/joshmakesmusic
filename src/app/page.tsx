@@ -255,12 +255,6 @@ function BioTeaser() {
               </div>
             </div>
             <div>
-              <div className="text-faint">Based</div>
-              <div className="mt-2 normal-case tracking-normal text-foreground/80">
-                {artist.hometown}
-              </div>
-            </div>
-            <div>
               <div className="text-faint">Label</div>
               <div className="mt-2 normal-case tracking-normal text-foreground/80">
                 {album.label}
@@ -436,7 +430,7 @@ function Footer() {
         </div>
         <div className="flex gap-6">
           <Link href="/press" className="hover:text-aurora">Press Kit</Link>
-          <span>Built quietly in Colorado.</span>
+          <span>Built quietly.</span>
         </div>
       </div>
     </footer>

@@ -49,7 +49,7 @@ export default function OneSheetPage() {
         <header className="flex items-end justify-between border-b-2 border-neutral-900 pb-4">
           <div>
             <p className="font-mono text-[0.65rem] uppercase tracking-[0.24em] text-neutral-500">
-              One-Sheet · Cosmic Mountain Guitar
+              One-Sheet · Cosmic American Guitar
             </p>
             <h1
               className="font-display-tight mt-1 text-5xl leading-[0.9]"
@@ -59,7 +59,6 @@ export default function OneSheetPage() {
             </h1>
           </div>
           <div className="text-right font-mono text-[0.65rem] uppercase tracking-[0.18em] text-neutral-600">
-            <div>{artist.hometown}</div>
             <div>{album.label}</div>
             <div className="mt-1 text-neutral-500">
               joshmakesmusic.com
@@ -162,7 +161,7 @@ export default function OneSheetPage() {
             <Contact label="Label" value={`${contact.label.name} · ${contact.label.contact}`} />
           </div>
           <p className="mt-3 text-center font-mono text-[0.6rem] uppercase tracking-[0.24em] text-neutral-400">
-            joshmakesmusic.com · {artist.hometown}
+            joshmakesmusic.com
           </p>
         </footer>
       </article>

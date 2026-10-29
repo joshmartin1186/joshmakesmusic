@@ -24,27 +24,27 @@ const siteUrl = "https://joshmakesmusic.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Josh Martin · Cosmic Mountain Guitar",
+    default: "Josh Martin · Cosmic American Guitar",
     template: "%s · Josh Martin",
   },
   description:
-    "Josh Martin is a cosmic mountain guitarist from Colorado Springs. Solo fingerstyle and effects-soaked electric playing in the American Primitive tradition. Debut album Western Mind on Eiderdown Records (2025).",
+    "Josh Martin is a cosmic American guitarist. Solo fingerstyle and effects-soaked electric playing in the American Primitive tradition. Debut album Western Mind on Eiderdown Records (2025).",
   keywords: [
     "Josh Martin",
-    "cosmic mountain guitar",
+    "cosmic american guitar",
     "American Primitive guitar",
     "fingerstyle guitar",
     "Eiderdown Records",
     "Western Mind",
     "ambient guitar",
-    "Colorado guitarist",
+    "cosmic American guitarist",
   ],
   authors: [{ name: "Josh Martin" }],
   creator: "Josh Martin",
   openGraph: {
     type: "website",
     url: siteUrl,
-    title: "Josh Martin · Cosmic Mountain Guitar",
+    title: "Josh Martin · Cosmic American Guitar",
     description:
       "Debut album Western Mind on Eiderdown Records (2025). Coverage: Acoustic Guitar Magazine, Bandcamp Daily, Aquarium Drunkard, KEXP.",
     siteName: "Josh Martin",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Josh Martin · Cosmic Mountain Guitar",
+    title: "Josh Martin · Cosmic American Guitar",
     description:
       "Debut album Western Mind on Eiderdown Records (2025).",
     images: ["/photos/og.jpg"],
