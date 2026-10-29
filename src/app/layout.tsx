@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s · Josh Martin",
   },
   description:
-    "Josh Martin is a cosmic American guitarist. Solo fingerstyle and effects-soaked electric playing in the American Primitive tradition. Debut album Western Mind on Eiderdown Records (2025).",
+    "Josh Martin is a cosmic American guitarist. Solo fingerstyle and ambient electric playing in the American Primitive tradition. Debut album Western Mind on Eiderdown Records (2025).",
   keywords: [
     "Josh Martin",
     "cosmic american guitar",
